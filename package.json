@@ -1,5 +1,5 @@
 {
-  "homepage": "http://theteapot.github.io/metservice-app",
+  "homepage": "http://theteapot.github.io/metservice-app/",
   "name": "mapbox-testing",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "nyc react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -28,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "nyc": "^13.3.0"
   }
 }
